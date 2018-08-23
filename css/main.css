@@ -1,55 +1,125 @@
-.myheader {
-    background-color: white;
-    padding: 10px
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
 }
-.mainLogoText {
+
+div, span, a, img {
+    //border: 1px solid red;
+}
+a, img {
+    //border: 1px solid greenyellow;
+}
+
+.myheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
 }
 .width60p {
     width: 60%;
 }
-.mainLogoText img{
-    width: 100%;
-    max-width: 250px;
-}
-.subLogoText {
-    font-size: 20px;
-    display: inline;
-}
+
 .flatButton {
     color: black;
 }
 .headerButtonParent {
     display: flex;
     align-items: center;
-    justify-content: flex-end
+    justify-content: flex-end;
 }
 
 .headerButton {
-    float: right;
-    font-size: 30px;
+    font-size: 41px;
+    font-weight: lighter;
 }
 .flatButton:hover {
     color: black;
     text-decoration: none;
 }
+.privacyPage {
+    margin-top: 20px; 
+}
 
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 3000px) {
+    .privacyPage hb1 {
+        font-size: 80px;
+    }
+    .headerButton {
+        font-size: 32px;
+    }
+    .subLogoText {
+        font-size: 20px;
+    }
+    .myheader {
+        padding: 34px 54px 18px 20px;
+        height: 103px;
+    }
+    img.mainLogoText {
+        width: 248px;
+        margin-right: 28px;
+    }
 }
 
 @media only screen and (max-width: 1279px) {
     .headerButton {
-        font-size: 26px;
+        font-size: 14px;
+    }
+
+    img.mainLogoText {
+        width: 149px;
+        margin-right: 16px;
+    }
+    .subLogoText {
+        font-size: 12px;
+    }
+    .privacyPage hb1 {
+        font-size: 60px;
+    }
+    .myheader {
+        padding: 18px 10px 10px 8px;
+        height: 62px;
     }
 }
 @media only screen and (max-width: 768px) {
     .headerButton {
-        font-size: 20px;
+        font-size: 12px;
+    }
+
+    .privacyPage hb1 {
+        font-size: 40px;
+    }
+    img.mainLogoText {
+        width: 93px;
+        margin-right: 9px;
+    }
+    .subLogoText {
+        font-size: 8px;
+    }
+    .myheader {
+        padding: 12px 12px 8px 6px;
+        height: 39px;
     }
 }
 
 @media only screen and (max-width: 479px) {
     .subLogoText {
         display: block;
+        font-size: 8px;
+    }
+
+    .headerButton {
         font-size: 12px;
+    }
+    
+    img.mainLogoText {
+        width: 93px;
+    }
+    .myheader {
+        padding: 10px 8px 15px 6px;
+        height: 58px;
+    }
+    .privacyPage hb1 {
+        font-size: 30px;
     }
 }
