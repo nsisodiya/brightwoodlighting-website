@@ -10,6 +10,11 @@ a, img {
     //border: 1px solid greenyellow;
 }
 
+.myheader .myLogo {
+    display: flex;
+    align-items: flex-end;
+}
+
 .myheader {
     display: flex;
     flex-direction: row;
