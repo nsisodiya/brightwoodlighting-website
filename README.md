@@ -19,7 +19,13 @@ npm install -g live-server
 https://desktop.github.com/
 
 ## Step 4 - Download or Clone the repo using GitDesktop
+Open Git Desktop - 
+Click File -> Clone Repository 
+Click on 3rd Tab - URL
 
+Enter this URL - git@github.com:nsisodiya/brightwoodlighting-website.git
+
+Click on Clone
 
 ## Step 5 - Run Live-Server
 ```
