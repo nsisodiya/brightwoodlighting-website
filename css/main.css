@@ -1,0 +1,55 @@
+.myheader {
+    background-color: white;
+    padding: 10px
+}
+.mainLogoText {
+}
+.width60p {
+    width: 60%;
+}
+.mainLogoText img{
+    width: 100%;
+    max-width: 250px;
+}
+.subLogoText {
+    font-size: 20px;
+    display: inline;
+}
+.flatButton {
+    color: black;
+}
+.headerButtonParent {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end
+}
+
+.headerButton {
+    float: right;
+    font-size: 30px;
+}
+.flatButton:hover {
+    color: black;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 2000px) {
+}
+
+@media only screen and (max-width: 1279px) {
+    .headerButton {
+        font-size: 26px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .headerButton {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .subLogoText {
+        display: block;
+        font-size: 12px;
+    }
+}
