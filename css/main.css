@@ -123,3 +123,88 @@ a, img {
         font-size: 30px;
     }
 }
+
+.howPage firstBox{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+
+.howPage img {
+    width: 100%;
+    //position: absolute;
+    //bottom: 0px;
+}
+
+.howPage firstBox div:first-child {
+    font-size: 64px;
+}
+.howPage firstBox div:last-child {
+    font-size:24px;color: #00000070;width:60%;
+}
+.howPage imageBox {
+    position: relative;
+    display: block;
+}
+.howPage imageText {
+    display: block;
+    width: 40%;
+    padding-left: 27px;
+    position: absolute;
+    top: 45%;
+}
+
+.howPage imageHeading {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 20px;
+}
+.howPage imageSubHeading {
+    font-size: 20px;
+    display: block;
+    color: #00000070
+}
+.howPage .imageParent {
+    //height: 300px;
+    //overflow: hidden;
+    //position: relative;
+}
+
+
+
+@media only screen and (max-width: 1279px) {
+
+}
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 479px) {
+    .howPage firstBox div:first-child {
+        font-size: 30px;
+    }
+    .howPage firstBox div:last-child {
+        font-size:18px;color: #00000070;width:90%;
+    }
+
+    
+    .howPage img {
+        width: 266%;
+        left: -108%;
+        position: relative;
+    }
+    .howPage imageText {
+        width: 85%;
+        top: 20%;
+    }
+    .howPage imageHeading {
+        font-size: 30px;
+        margin-bottom: 3px;
+    }
+    .howPage imageSubHeading {
+        font-size: 18px;
+    }
+}
