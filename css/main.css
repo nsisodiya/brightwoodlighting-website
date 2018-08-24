@@ -150,28 +150,7 @@ a, img {
 .howPage firstBox div:last-child {
     font-size:24px;color: #00000070;width:60%;
 }
-.howPage imageBox {
-    position: relative;
-    display: block;
-}
-.howPage imageText {
-    display: block;
-    width: 40%;
-    padding-left: 27px;
-    position: absolute;
-    top: 45%;
-}
 
-.howPage imageHeading {
-    font-size: 40px;
-    display: block;
-    margin-bottom: 20px;
-}
-.howPage imageSubHeading {
-    font-size: 20px;
-    display: block;
-    color: #00000070
-}
 .howPage .imageParent {
     //height: 300px;
     //overflow: hidden;
@@ -179,11 +158,79 @@ a, img {
 }
 
 
+@media only screen and (max-width: 3000px) {
+    .howPage imageBox {
+        position: relative;
+        display: block;
+        height: 658px;
+        overflow: hidden;
+    }
+    .howPage imageContainer {
+        //border: 1px solid green;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        align-items: flex-end;
+    }
+    .howPage imageText {
+        display: block;
+        margin-left: 9.6%;
+        position: absolute;
+        bottom: 256px;
+        width: 640px;
+    }
 
+    .howPage imageHeading {
+        font-size: 45px;
+        display: block;
+        margin-bottom: 20px;
+    }
+    .howPage imageSubHeading {
+        font-size: 24px;
+        display: block;
+        color: #00000070
+    }
+
+    .howPage imageContainer img {
+        width: 100%;
+    }
+}
 @media only screen and (max-width: 1279px) {
+    .howPage imageHeading {
+        font-size: 40px;
+    }
+    .howPage imageSubHeading {
+        font-size: 20px;
+    }
+
+    .howPage imageText {
+        margin-left: 3.64%;
+        bottom: 252px;
+        width: 545px;
+    }
+    .howPage imageContainer img {
+        width: 1280px;
+    }
 
 }
 @media only screen and (max-width: 768px) {
+    .howPage imageBox {
+        height: 520px;
+    }
+    .howPage imageHeading {
+        font-size: 30px;
+    }
+    .howPage imageSubHeading {
+        font-size: 18px;
+    }
+    .howPage imageText {
+        margin-left: 7%;
+        bottom: 293px;
+        width: 353px;
+    }
+    .howPage imageContainer img {
+        width: 1012px;
+    }
 
 }
 
@@ -195,21 +242,21 @@ a, img {
         font-size:18px;color: #00000070;width:90%;
     }
 
-    
-    .howPage img {
-        width: 266%;
-        left: -108%;
-        position: relative;
-    }
-    .howPage imageText {
-        width: 85%;
-        top: 20%;
+    .howPage imageBox {
+        height: 410px;
     }
     .howPage imageHeading {
         font-size: 30px;
-        margin-bottom: 3px;
     }
     .howPage imageSubHeading {
         font-size: 18px;
+    }
+    .howPage imageText {
+        margin-left: 5.88%;
+        bottom: 232px;
+        width: 279px;
+    }    
+    .howPage imageContainer img {
+        width: 1000px;
     }
 }
