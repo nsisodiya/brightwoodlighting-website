@@ -27,11 +27,16 @@ a, img {
     flex-direction: row;
     justify-content: space-between;
     background-color: black;
-    color: #ffffff;
 }
 
-.myfooter .textColor {
+.myfooter .textColor,.copyRight {
     color: #ffffff;
+    margin: auto;
+}
+
+.myfooter .copyRight {
+    display: flex;
+    align-items: flex-end;
 }
 
 .myfooter .copyRight {
