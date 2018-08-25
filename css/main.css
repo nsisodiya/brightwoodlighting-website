@@ -21,6 +21,23 @@ a, img {
     justify-content: space-between;
     background-color: white;
 }
+
+.myfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    color: #ffffff;
+}
+
+.myfooter .textColor {
+    color: #ffffff;
+}
+
+.myfooter .copyRight {
+    font-size: x-small;
+}
+
 .width60p {
     width: 60%;
 }
