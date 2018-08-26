@@ -1,20 +1,22 @@
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: lighter;
-}
-
-/*
 div, span, a, img {
   //border: 1px solid red;
 }
+
 a, img {
   //border: 1px solid greenyellow;
 }
-*/
 
-.myheader .myLogo {
+@mixin displayFlex {
   display: flex;
   align-items: flex-end;
+}
+
+$fontStack: 'Open Sans', sans-serif;
+$fontWeight: lighter;
+
+body {
+  font-family: $fontStack;
+  font-weight: $fontWeight;
 }
 
 .myheader {
@@ -22,6 +24,10 @@ a, img {
   flex-direction: row;
   justify-content: space-between;
   background-color: white;
+
+  .myLogo {
+    @include displayFlex;
+  }
 }
 
 .myfooter {
@@ -29,20 +35,20 @@ a, img {
   flex-direction: row;
   justify-content: space-between;
   background-color: black;
-}
 
-.myfooter .textColor,.copyRight {
-  color: #ffffff;
-  margin: auto;
-}
-
-.myfooter .copyRight {
-  display: flex;
-  align-items: flex-end;
-}
-
-.myfooter .copyRight {
-  font-size: x-small;
+  .textColor, .copyRight {
+    color: #ffffff;
+    margin: auto;
+  }
+  .copyRight {
+    color: #ffffff;
+    margin: auto;
+  }
+  .copyRight {
+    display: flex;
+    align-items: flex-end;
+    font-size: x-small;
+  }
 }
 
 .width60p {
@@ -52,6 +58,7 @@ a, img {
 .flatButton {
   color: black;
 }
+
 .headerButtonParent {
   display: flex;
   align-items: center;
@@ -62,10 +69,12 @@ a, img {
   font-size: 41px;
   font-weight: lighter;
 }
+
 .flatButton:hover {
   color: black;
   text-decoration: none;
 }
+
 .privacyPage {
   margin-top: 20px;
 }
@@ -110,6 +119,7 @@ a, img {
     height: 62px;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .headerButton {
     font-size: 12px;
@@ -153,34 +163,29 @@ a, img {
   }
 }
 
-.howPage firstBox{
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 70px;
-  padding-bottom: 80px;
+.howPage {
+  firstBox {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+  img {
+    width: 100%;
+  }
+  firstBox {
+    div:first-child {
+      font-size: 64px;
+    }
+    div:last-child {
+      font-size: 24px;
+      color: #00000070;
+      width: 60%;
+    }
+  }
 }
-
-.howPage img {
-  width: 100%;
-  //position: absolute;
-  //bottom: 0px;
-}
-
-.howPage firstBox div:first-child {
-  font-size: 64px;
-}
-.howPage firstBox div:last-child {
-  font-size:24px;color: #00000070;width:60%;
-}
-
-.howPage .imageParent {
-  //height: 300px;
-  //overflow: hidden;
-  //position: relative;
-}
-
 
 @media only screen and (max-width: 3000px) {
   .howPage imageBox {
@@ -222,6 +227,7 @@ a, img {
     width: 100%;
   }
 }
+
 @media only screen and (max-width: 1279px) {
   .howPage imageHeading {
     font-size: 40px;
@@ -240,6 +246,7 @@ a, img {
   }
 
 }
+
 @media only screen and (max-width: 768px) {
   .howPage imageBox {
     height: 520px;
@@ -266,7 +273,9 @@ a, img {
     font-size: 30px;
   }
   .howPage firstBox div:last-child {
-    font-size:18px;color: #00000070;width:90%;
+    font-size: 18px;
+    color: #00000070;
+    width: 90%;
   }
 
   .howPage imageBox {

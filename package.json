@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "sass --watch ./css/main.scss:./css/main.css && live-server"
+    "buildCss": "./node_modules/sass/sass.js --watch ./css/main.scss ./css/main.css",
+    "start": " npm run buildCss & live-server"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/nsisodiya/brightwoodlighting-website/issues"
   },
-  "homepage": "https://github.com/nsisodiya/brightwoodlighting-website#readme"
+  "homepage": "https://github.com/nsisodiya/brightwoodlighting-website#readme",
+  "devDependencies": {
+    "sass": "^1.13.0"
+  }
 }

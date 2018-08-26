@@ -1,41 +1,31 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: lighter; }
-
-/*
-div, span, a, img {
-  //border: 1px solid red;
-}
-a, img {
-  //border: 1px solid greenyellow;
-}
-*/
-.myheader .myLogo {
-  display: flex;
-  align-items: flex-end; }
 
 .myheader {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: white; }
+  .myheader .myLogo {
+    display: flex;
+    align-items: flex-end; }
 
 .myfooter {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: black; }
-
-.myfooter .textColor, .copyRight {
-  color: #ffffff;
-  margin: auto; }
-
-.myfooter .copyRight {
-  display: flex;
-  align-items: flex-end; }
-
-.myfooter .copyRight {
-  font-size: x-small; }
+  .myfooter .textColor, .myfooter .copyRight {
+    color: #ffffff;
+    margin: auto; }
+  .myfooter .copyRight {
+    color: #ffffff;
+    margin: auto; }
+  .myfooter .copyRight {
+    display: flex;
+    align-items: flex-end;
+    font-size: x-small; }
 
 .width60p {
   width: 60%; }
@@ -134,13 +124,10 @@ a, img {
   align-items: center;
   padding-top: 70px;
   padding-bottom: 80px; }
-
 .howPage img {
   width: 100%; }
-
 .howPage firstBox div:first-child {
   font-size: 64px; }
-
 .howPage firstBox div:last-child {
   font-size: 24px;
   color: #00000070;
