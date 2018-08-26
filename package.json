@@ -1,0 +1,21 @@
+{
+  "name": "brightwoodlighting-website",
+  "version": "1.0.0",
+  "description": "## Step 1 - Install Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sass --watch ./css/main.scss:./css/main.css && live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nsisodiya/brightwoodlighting-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nsisodiya/brightwoodlighting-website/issues"
+  },
+  "homepage": "https://github.com/nsisodiya/brightwoodlighting-website#readme"
+}

@@ -1,6 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  font-weight: lighter; }
+  font-weight: lighter;
+}
 
 /*
 div, span, a, img {
@@ -10,232 +11,279 @@ a, img {
   //border: 1px solid greenyellow;
 }
 */
+
 .myheader .myLogo {
   display: flex;
-  align-items: flex-end; }
+  align-items: flex-end;
+}
 
 .myheader {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: white; }
+  background-color: white;
+}
 
 .myfooter {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: black; }
+  background-color: black;
+}
 
-.myfooter .textColor, .copyRight {
+.myfooter .textColor,.copyRight {
   color: #ffffff;
-  margin: auto; }
+  margin: auto;
+}
 
 .myfooter .copyRight {
   display: flex;
-  align-items: flex-end; }
+  align-items: flex-end;
+}
 
 .myfooter .copyRight {
-  font-size: x-small; }
+  font-size: x-small;
+}
 
 .width60p {
-  width: 60%; }
+  width: 60%;
+}
 
 .flatButton {
-  color: black; }
-
+  color: black;
+}
 .headerButtonParent {
   display: flex;
   align-items: center;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+}
 
 .headerButton {
   font-size: 41px;
-  font-weight: lighter; }
-
+  font-weight: lighter;
+}
 .flatButton:hover {
   color: black;
-  text-decoration: none; }
-
+  text-decoration: none;
+}
 .privacyPage {
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 
 @media only screen and (max-width: 3000px) {
   .privacyPage hb1 {
-    font-size: 80px; }
-
+    font-size: 80px;
+  }
   .headerButton {
-    font-size: 32px; }
-
+    font-size: 32px;
+  }
   .subLogoText {
-    font-size: 20px; }
-
+    font-size: 20px;
+  }
   .myheader {
     padding: 34px 54px 18px 20px;
-    height: 103px; }
-
+    height: 103px;
+  }
   img.mainLogoText {
     width: 248px;
-    margin-right: 28px; } }
+    margin-right: 28px;
+  }
+}
+
 @media only screen and (max-width: 1279px) {
   .headerButton {
-    font-size: 14px; }
+    font-size: 14px;
+  }
 
   img.mainLogoText {
     width: 149px;
-    margin-right: 16px; }
-
+    margin-right: 16px;
+  }
   .subLogoText {
-    font-size: 12px; }
-
+    font-size: 12px;
+  }
   .privacyPage hb1 {
-    font-size: 60px; }
-
+    font-size: 60px;
+  }
   .myheader {
     padding: 18px 10px 10px 8px;
-    height: 62px; } }
+    height: 62px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .headerButton {
-    font-size: 12px; }
+    font-size: 12px;
+  }
 
   .privacyPage hb1 {
-    font-size: 40px; }
-
+    font-size: 40px;
+  }
   img.mainLogoText {
     width: 93px;
-    margin-right: 9px; }
-
+    margin-right: 9px;
+  }
   .subLogoText {
-    font-size: 8px; }
-
+    font-size: 8px;
+  }
   .myheader {
     padding: 12px 12px 8px 6px;
-    height: 39px; } }
+    height: 39px;
+  }
+}
+
 @media only screen and (max-width: 479px) {
   .subLogoText {
     display: block;
-    font-size: 8px; }
+    font-size: 8px;
+  }
 
   .headerButton {
-    font-size: 12px; }
+    font-size: 12px;
+  }
 
   img.mainLogoText {
-    width: 93px; }
-
+    width: 93px;
+  }
   .myheader {
     padding: 10px 8px 15px 6px;
-    height: 58px; }
-
+    height: 58px;
+  }
   .privacyPage hb1 {
-    font-size: 30px; } }
-.howPage firstBox {
+    font-size: 30px;
+  }
+}
+
+.howPage firstBox{
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 70px;
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+}
 
 .howPage img {
-  width: 100%; }
+  width: 100%;
+  //position: absolute;
+  //bottom: 0px;
+}
 
 .howPage firstBox div:first-child {
-  font-size: 64px; }
-
+  font-size: 64px;
+}
 .howPage firstBox div:last-child {
-  font-size: 24px;
-  color: #00000070;
-  width: 60%; }
+  font-size:24px;color: #00000070;width:60%;
+}
+
+.howPage .imageParent {
+  //height: 300px;
+  //overflow: hidden;
+  //position: relative;
+}
+
 
 @media only screen and (max-width: 3000px) {
   .howPage imageBox {
     position: relative;
     display: block;
     height: 658px;
-    overflow: hidden; }
-
+    overflow: hidden;
+  }
   .howPage imageContainer {
+    //border: 1px solid green;
     display: flex;
     justify-content: center;
     height: 100%;
-    align-items: flex-end; }
-
+    align-items: flex-end;
+  }
   .howPage imageText {
     display: block;
     margin-left: 9.6%;
     position: absolute;
     bottom: 256px;
-    width: 640px; }
-
+    width: 640px;
+  }
   .howPage .villa2ImageTextColor {
-    color: white; }
+    color: white;
+  }
 
   .howPage imageHeading {
     font-size: 45px;
     display: block;
-    margin-bottom: 20px; }
-
+    margin-bottom: 20px;
+  }
   .howPage imageSubHeading {
     font-size: 24px;
     display: block;
-    color: #00000070; }
+    color: #00000070;
+  }
 
   .howPage imageContainer img {
-    width: 100%; } }
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 1279px) {
   .howPage imageHeading {
-    font-size: 40px; }
-
+    font-size: 40px;
+  }
   .howPage imageSubHeading {
-    font-size: 20px; }
+    font-size: 20px;
+  }
 
   .howPage imageText {
     margin-left: 3.64%;
     bottom: 252px;
-    width: 545px; }
-
+    width: 545px;
+  }
   .howPage imageContainer img {
-    width: 1280px; } }
+    width: 1280px;
+  }
+
+}
 @media only screen and (max-width: 768px) {
   .howPage imageBox {
-    height: 520px; }
-
+    height: 520px;
+  }
   .howPage imageHeading {
-    font-size: 30px; }
-
+    font-size: 30px;
+  }
   .howPage imageSubHeading {
-    font-size: 18px; }
-
+    font-size: 18px;
+  }
   .howPage imageText {
     margin-left: 7%;
     bottom: 293px;
-    width: 353px; }
-
+    width: 353px;
+  }
   .howPage imageContainer img {
-    width: 1012px; } }
+    width: 1012px;
+  }
+
+}
+
 @media only screen and (max-width: 479px) {
   .howPage firstBox div:first-child {
-    font-size: 30px; }
-
+    font-size: 30px;
+  }
   .howPage firstBox div:last-child {
-    font-size: 18px;
-    color: #00000070;
-    width: 90%; }
+    font-size:18px;color: #00000070;width:90%;
+  }
 
   .howPage imageBox {
-    height: 410px; }
-
+    height: 410px;
+  }
   .howPage imageHeading {
-    font-size: 30px; }
-
+    font-size: 30px;
+  }
   .howPage imageSubHeading {
-    font-size: 18px; }
-
+    font-size: 18px;
+  }
   .howPage imageText {
     margin-left: 5.88%;
     bottom: 232px;
-    width: 279px; }
-
+    width: 279px;
+  }
   .howPage imageContainer img {
-    width: 1000px; } }
-
-/*# sourceMappingURL=main.css.map */
+    width: 1000px;
+  }
+}
