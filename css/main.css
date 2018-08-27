@@ -21,6 +21,28 @@ a, img {
     justify-content: space-between;
     background-color: white;
 }
+
+.myfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.myfooter .textColor,.copyRight {
+    color: #ffffff;
+    margin: auto;
+}
+
+.myfooter .copyRight {
+    display: flex;
+    align-items: flex-end;
+}
+
+.myfooter .copyRight {
+    font-size: x-small;
+}
+
 .width60p {
     width: 60%;
 }
@@ -43,7 +65,7 @@ a, img {
     text-decoration: none;
 }
 .privacyPage {
-    margin-top: 20px; 
+    margin-top: 20px;
 }
 
 @media only screen and (max-width: 3000px) {
@@ -116,7 +138,7 @@ a, img {
     .headerButton {
         font-size: 12px;
     }
-    
+
     img.mainLogoText {
         width: 93px;
     }
@@ -178,6 +200,9 @@ a, img {
         position: absolute;
         bottom: 256px;
         width: 640px;
+    }
+    .howPage .villa2ImageTextColor {
+        color: white;
     }
 
     .howPage imageHeading {
@@ -255,7 +280,7 @@ a, img {
         margin-left: 5.88%;
         bottom: 232px;
         width: 279px;
-    }    
+    }
     .howPage imageContainer img {
         width: 1000px;
     }
