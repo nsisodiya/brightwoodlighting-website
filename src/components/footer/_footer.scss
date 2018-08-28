@@ -19,17 +19,22 @@ myfooter {
         height: 101px;
     }
     .copyRight {
+        font-size: 12px;
+        color: #ffffff50;
+        
         @include bigscreen {
-            margin-left: 40px;
+            margin-left: 40px;            
         }
         @include laptop {
             margin-left: 40px;
         }
         @include ipad {
             margin-left: 40px;
+            font-size: 8px;
         }
         @include mobile {
             margin-left: 11px;
+            font-size: 8px;
         }
     }
     linkGroup {
