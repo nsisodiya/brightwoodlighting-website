@@ -1,0 +1,10 @@
+$screen-bigscreen-max: 3000px;  // Big Screen, High Res Laptop Screen
+$screen-laptop-max: 1279px;  // Laptop
+$screen-ipad-max: 768px;  // IPad and Table
+$screen-mobile-max: 479px; // Mobile
+
+// Mixins
+@mixin bigscreen { @media only screen and (max-width: #{$screen-bigscreen-max}) {@content;} } // Tiny devices
+@mixin laptop { @media only screen and (max-width: #{$screen-laptop-max}) {@content;} } // Small devices
+@mixin ipad { @media only screen and (max-width: #{$screen-ipad-max}) {@content;} } // Medium devices
+@mixin mobile { @media only screen and (max-width: #{$screen-mobile-max}) {@content;} } // Large devices
