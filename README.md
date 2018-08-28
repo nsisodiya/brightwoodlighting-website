@@ -30,7 +30,8 @@ Click on Clone
 ## Step 5 - Run Live-Server
 ```
 cd /directory/in/which/you/downloaded/code
-live-server
+npm install
+npm run devstart
 ```
 
 ## Step 6 - Open WebSite

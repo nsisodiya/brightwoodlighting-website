@@ -1,12 +1,15 @@
 {
   "name": "brightwoodlighting-website",
   "version": "1.0.0",
-  "description": "## Step 1 - Install Node.js",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "buildCss": "./node_modules/sass/sass.js --watch ./css/main.scss ./css/main.css",
-    "start": " npm run buildCss & live-server"
+    "devstart": "run-p startliveserver startScssBuilder",
+    "build": "??",
+    "startliveserver": "live-server --ignore=.git",
+    "startScssBuilder": "./node_modules/sass/sass.js --watch src:temp",
+    "1startScssBuilder": "./node_modules/sass/sass.js --watch ./css/final.scss ./temp/final.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -19,7 +22,9 @@
     "url": "https://github.com/nsisodiya/brightwoodlighting-website/issues"
   },
   "homepage": "https://github.com/nsisodiya/brightwoodlighting-website#readme",
-  "devDependencies": {
+  "dependencies": {
+    "live-server": "^1.2.0",
+    "npm-run-all": "^4.1.3",
     "sass": "^1.13.0"
   }
 }

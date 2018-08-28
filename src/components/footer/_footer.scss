@@ -1,0 +1,76 @@
+myfooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: #ffffff;
+
+    @include bigscreen {
+        height: 113px;
+    }
+    @include laptop {
+        height: 62px;
+    }
+    @include ipad {
+        height: 62px;
+    }
+    @include mobile {
+        height: 101px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .copyRight {
+        font-size: 12px;
+        color: #ffffff50;
+        
+        @include bigscreen {
+            margin-left: 40px;            
+        }
+        @include laptop {
+            margin-left: 40px;
+        }
+        @include ipad {
+            margin-left: 40px;
+            font-size: 8px;
+        }
+        @include mobile {
+            margin-left: 11px;
+            font-size: 8px;
+            display: none;
+        }
+        
+    }
+    .secondCopyRight {
+        display: none;
+        @include mobile {
+            display: block;
+        }
+    }
+    linkGroup {
+        @include mobile {
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        a {
+            color : white;
+            @include bigscreen {
+                font-size: 25px;
+                margin-right: 50px;
+            }
+            @include laptop {
+                font-size: 20px;
+                margin-right: 30px;
+            }
+            @include ipad {
+                font-size: 16px;
+                margin-right: 17px;
+            }
+            @include mobile {
+                font-size: 16px;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+$screen-bigscreen-max: 3000px;  // Big Screen, High Res Laptop Screen
+$screen-bigscreen-min: 1280px;  // Big Screen, High Res Laptop Screen
+
+$screen-laptop-max: 1279px;  // Laptop
+$screen-laptop-min: 769px;  // Laptop
+
+$screen-ipad-max: 768px;  // IPad and Table
+$screen-ipad-min: 481px;  // IPad and Table
+
+$screen-mobile-max: 480px; // Mobile
+$screen-mobile-min: 0px; // Mobile
+
+// Mixins
+
+@mixin bigscreen { @media only screen and (min-width: #{$screen-bigscreen-min}) and (max-width: #{$screen-bigscreen-max}) {@content;} } // Tiny devices
+@mixin laptop { @media only screen and (min-width: #{$screen-laptop-min}) and (max-width: #{$screen-laptop-max}) {@content;} } // Small devices
+@mixin ipad { @media only screen and (min-width: #{$screen-ipad-min}) and (max-width: #{$screen-ipad-max}) {@content;} } // Medium devices
+@mixin mobile { @media only screen and (min-width: #{$screen-mobile-min}) and (max-width: #{$screen-mobile-max}) {@content;} } // Large devices

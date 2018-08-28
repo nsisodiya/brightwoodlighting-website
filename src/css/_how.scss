@@ -1,0 +1,103 @@
+.howPage {
+  .lastBox {
+    text-align: center;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    @include bigscreen {
+      height: 348px;
+    }
+    @include laptop {
+      height: 317px;
+    }
+    @include ipad {
+      height: 264px;
+    }
+    @include mobile {
+      height: 273px;
+    }
+
+    .line1 {
+      @include bigscreen {
+        font-size: 45px;
+      }
+      @include laptop {
+        font-size: 40px;
+      }
+      @include ipad {
+        font-size: 30px;
+      }
+      @include mobile {
+        font-size: 30px;
+      }
+    }
+    .line2 {
+      @include bigscreen {
+        font-size: 24px;
+      }
+      @include laptop {
+        font-size: 20px;
+      }
+      @include ipad {
+        width: 50%;
+        font-size: 18px;
+      }
+      @include mobile {
+        width: 70%;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.emailBox {
+  margin-top: 19px;
+  display: flex;
+  input {
+    outline: none; 
+    padding: 0px;
+    margin: 0px;
+    background: #e6e6e6;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 0px;
+    width: 418px;
+    height: 35px;
+    padding-left: 40px;
+    @include ipad {
+      width: 293px;
+      font-size: 12.6px;
+      height: 25px;
+    }
+    @include mobile {
+      font-size: 12.6px;
+      width: 214px;
+      height: 25px;
+    }
+  }
+  button {
+    outline: none; 
+    padding: 0px;
+    margin: 0px;
+    color: #f79365;
+    font-size: 18px;
+    background: #fafafa;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 0px;
+    width: 143px;
+    height: 35px;
+    @include ipad {
+      font-size: 12.6px;
+      width: 100px;
+      height: 25px;
+    }
+    @include mobile {
+      font-size: 12.6px;
+      width: 83px;
+      height: 25px;
+    }
+  }
+}
