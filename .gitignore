@@ -1,7 +1,4 @@
 .DS_Store
 .idea/
-node_modules
-<<<<<<< HEAD
-=======
-temp
->>>>>>> 1876eaf6babcde24d8c53070066f12ef0d8ce7da
+node_modules/
+temp/
