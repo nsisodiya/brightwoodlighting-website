@@ -1,10 +1,37 @@
 myfooter {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     background-color: black;
     color: #ffffff;
 
+    @include bigscreen {
+        height: 113px;
+    }
+    @include laptop {
+        height: 62px;
+    }
+    @include ipad {
+        height: 62px;
+    }
+    @include mobile {
+        height: 101px;
+    }
+    .copyRight {
+        @include bigscreen {
+            margin-left: 40px;
+        }
+        @include laptop {
+            margin-left: 40px;
+        }
+        @include ipad {
+            margin-left: 40px;
+        }
+        @include mobile {
+            margin-left: 11px;
+        }
+    }
     linkGroup {
         a {
             color : white;
