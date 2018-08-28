@@ -1,0 +1,59 @@
+.howPage {
+  .lastBox {
+    text-align: center;
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    @include bigscreen {
+        height: 348px;
+    }
+    @include laptop {
+        height: 317px;
+    }
+    @include ipad {
+        height: 264px;
+    }
+    @include mobile {
+        height: 273px;
+    }
+
+    .line1 {
+        @include bigscreen {
+            font-size: 45px;
+        }
+        @include laptop {
+            font-size: 40px;
+        }
+        @include ipad {
+            font-size: 30px;
+        }
+        @include mobile {
+            font-size: 30px;
+        }
+    }
+    .line2 {
+        @include bigscreen {
+            font-size: 24px;
+        }
+        @include laptop {
+            font-size: 20px;
+        }
+        @include ipad {
+            width: 50%;
+            font-size: 18px;
+        }
+        @include mobile {
+            width: 70%;
+            font-size: 18px;
+        }
+    }
+
+    .emailBox {
+        input {
+            border-radius: 10px;
+        }
+    }
+  }
+}
