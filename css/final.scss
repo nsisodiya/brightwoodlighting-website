@@ -1,0 +1,11 @@
+.myheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+
+    .myLogo {
+        display: flex;
+        align-items: flex-end;
+    }
+}
