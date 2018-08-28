@@ -6,11 +6,6 @@ a, img {
   //border: 1px solid greenyellow;
 }
 
-@mixin displayFlex {
-  display: flex;
-  align-items: flex-end;
-}
-
 $fontStack: 'Open Sans', sans-serif;
 $fontWeight: lighter;
 
@@ -26,7 +21,8 @@ body {
   background-color: white;
 
   .myLogo {
-    @include displayFlex;
+    display: flex;
+    align-items: flex-end;
   }
 }
 
