@@ -7,7 +7,8 @@
     "devstart": "run-p startliveserver startScssBuilder",
     "build": "??",
     "startliveserver": "live-server --ignore=.git",
-    "startScssBuilder": "./node_modules/sass/sass.js --watch ./css/final.scss ./temp/final.css",
+    "startScssBuilder": "./node_modules/sass/sass.js --watch src:temp",
+    "1startScssBuilder": "./node_modules/sass/sass.js --watch ./css/final.scss ./temp/final.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
