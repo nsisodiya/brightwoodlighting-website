@@ -129,44 +129,36 @@ a, img {
     }
 }
 
-.howPage firstBox{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 70px;
-    padding-bottom: 80px;
-}
-
-.howPage img {
-    width: 100%;
-    //position: absolute;
-    //bottom: 0px;
-}
-
-.howPage firstBox div:first-child {
-    font-size: 64px;
-}
-.howPage firstBox div:last-child {
-    font-size:24px;color: #00000070;width:60%;
-}
-
-.howPage .imageParent {
-    //height: 300px;
-    //overflow: hidden;
-    //position: relative;
-}
-
 
 @media only screen and (max-width: 3000px) {
+    .howPage firstBox{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 70px;
+        padding-bottom: 80px;
+    }
+    
+    .howPage img {
+        width: 100%;
+    }
+    
+    .howPage firstBox div:first-child {
+        font-size: 64px;
+    }
+    .howPage firstBox div:last-child {
+        font-size:24px;color: #00000070;width:60%;
+    }
+    
     .howPage imageBox {
         position: relative;
         display: block;
         height: 658px;
         overflow: hidden;
     }
+
     .howPage imageContainer {
-        //border: 1px solid green;
         display: flex;
         justify-content: center;
         height: 100%;
@@ -214,14 +206,15 @@ a, img {
 
 }
 @media only screen and (max-width: 768px) {
-    .howPage imageBox {
-        height: 520px;
-    }
     .howPage imageHeading {
         font-size: 30px;
     }
     .howPage imageSubHeading {
         font-size: 18px;
+    }
+
+    .howPage imageBox {
+        height: 520px;
     }
     .howPage imageText {
         margin-left: 7%;
@@ -235,6 +228,13 @@ a, img {
 }
 
 @media only screen and (max-width: 479px) {
+    .howPage imageHeading {
+        font-size: 30px;
+    }
+    .howPage imageSubHeading {
+        font-size: 18px;
+    }
+
     .howPage firstBox div:first-child {
         font-size: 30px;
     }
@@ -244,12 +244,6 @@ a, img {
 
     .howPage imageBox {
         height: 410px;
-    }
-    .howPage imageHeading {
-        font-size: 30px;
-    }
-    .howPage imageSubHeading {
-        font-size: 18px;
     }
     .howPage imageText {
         margin-left: 5.88%;
