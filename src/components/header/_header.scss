@@ -3,7 +3,11 @@ myheader {
     flex-direction: row;
     justify-content: space-between;
     background-color: white;
+    //border: 1px solid salmon;
 
+    .myLogo {
+        display: flex;
+    }
     @include bigscreen {
         padding: 34px 54px 18px 20px;
         height: 103px;
@@ -23,6 +27,7 @@ myheader {
     }
     
     .subLogoText {
+        align-self: flex-end;
         @include bigscreen {
             font-size: 20px;
         }
