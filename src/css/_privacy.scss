@@ -1,0 +1,16 @@
+$margin-left: 30px;
+$text-align: left;
+.privacyPage {
+  firstbox {
+      text-align: center;
+  }
+  .content {
+      text-align: $text-align;
+      margin-left: $margin-left;
+  }
+  ContactUs {
+    .contactLink {
+      color:#f79365;
+    }
+  }
+}
