@@ -23,9 +23,9 @@ myfooter {
     .copyRight {
         font-size: 12px;
         color: #ffffff50;
-        
+
         @include bigscreen {
-            margin-left: 40px;            
+            margin-left: 40px;
         }
         @include laptop {
             margin-left: 40px;
@@ -39,7 +39,7 @@ myfooter {
             font-size: 8px;
             display: none;
         }
-        
+
     }
     .secondCopyRight {
         display: none;
@@ -48,6 +48,7 @@ myfooter {
         }
     }
     linkGroup {
+        color: red;
         @include mobile {
             display: flex;
             width: 100%;

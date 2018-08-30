@@ -1,0 +1,155 @@
+$margin-left: 30px;
+$text-align: left;
+.privacyPage {
+  margin-top: 20px;
+  firstBox {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include bigscreen {
+      margin-top: 113px;
+      margin-bottom: 198px;
+    }
+    @include laptop {
+      margin-top: 160px;
+      margin-bottom: 141px;
+    }
+    @include ipad {
+      margin-top: 119px;
+      margin-bottom: 157px;
+    }
+    @include mobile {
+      margin-top: 55px;
+      margin-bottom: 58px;
+    }
+  }
+  hb1 {
+    @include bigscreen {
+      font-size: 70px;
+    }
+    @include laptop {
+      font-size: 40px;
+    }
+
+    @include ipad {
+      font-size: 30px;
+    }
+    @include mobile {
+      margin-top: 55px;
+      font-size: 30px;
+    }
+  }
+  .line {
+    border: 2px solid #00000050;
+    @include bigscreen {
+      margin-top:50px;
+      margin-bottom:50px;
+    }
+    @include laptop {
+      margin-top:65px;
+      margin-bottom:65px;
+    }
+
+    @include ipad {
+      margin-top:40px;
+      margin-bottom:40px;
+    }
+    @include mobile {
+      margin-top:36px;
+      margin-bottom:36px;
+    }
+  }
+  hb2 {
+    @include bigscreen {
+      font-size: 32px;
+      width: 62%;
+    }
+    @include laptop {
+      font-size: 20px;
+      width: 65%;
+    }
+
+    @include ipad {
+      font-size: 18px;
+      width: 90%;
+    }
+    @include mobile {
+      font-size: 18px;
+      width: 93%;
+    }
+  }
+  firstbox {
+      text-align: center;
+  }
+  .paraitem {
+    span {
+      @include bigscreen {
+        font-size: 30px;
+      }
+      @include laptop {
+        font-size: 16px;
+      }
+      @include ipad {
+        font-size: 15px;
+      }
+      @include mobile {
+        font-size: 15px;
+      }
+    }
+    p {
+      margin-left: 50px; 
+      color: #00000070;
+      @include bigscreen {
+        font-size: 24px;
+      }
+      @include laptop {
+        font-size: 14px;
+      }
+      @include ipad {
+        font-size: 12px;
+      }
+      @include mobile {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .mainBox {
+    @include bigscreen {
+      padding: 23px;
+    }
+    @include laptop {
+      padding: 23px;
+    }
+
+    @include ipad {
+      padding: 4px;
+    }
+    @include mobile {
+      padding: 5px;
+    }
+  }
+
+
+  .maintitle {
+    @include bigscreen {
+      font-size: 60px;
+    }
+    @include laptop {
+      font-size: 40px;
+    }
+
+    @include ipad {
+      font-size: 30px;
+    }
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+  
+  
+  .contactLink {
+    color:#f79365;
+  }
+}
