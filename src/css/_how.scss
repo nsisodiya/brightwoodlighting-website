@@ -8,10 +8,6 @@
     padding-bottom: 80px;
   }
 
-  img {
-    width: 100%;
-  }
-
   firstBox div:first-child {
     font-size: 64px;
     @include mobile {
@@ -45,6 +41,33 @@
     justify-content: center;
     height: 100%;
     align-items: flex-end;
+
+    img {
+      @include bigscreen {
+        width: 100%;
+      }
+      @include laptop {
+        width: 1280px;
+      }
+      @include ipad {
+        width: 1012px;
+      }
+      @include mobile {
+        width: 1000px;
+      }
+    }
+
+    .image2 {
+      position: absolute;
+      top: 0px;
+      @include mobile {
+        width: 961px;
+        right: -60%;
+      }
+    }
+    .image3 {
+      align-self: center;
+    }
   }
   imageText {
     display: block;
@@ -103,20 +126,6 @@
     }
   }
 
-  imageContainer img {
-    @include bigscreen {
-      width: 100%;
-    }
-    @include laptop {
-      width: 1280px;
-    }
-    @include ipad {
-      width: 1012px;
-    }
-    @include mobile {
-      width: 1000px;
-    }
-  }
 
   .lastBox {
     text-align: center;
