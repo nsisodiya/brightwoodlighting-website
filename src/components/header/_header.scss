@@ -7,6 +7,9 @@ myheader {
 
     .myLogo {
         display: flex;
+        @include mobile {
+            flex-direction: column;
+        }
     }
     @include bigscreen {
         padding: 34px 54px 18px 20px;
@@ -30,12 +33,15 @@ myheader {
         align-self: flex-end;
         @include bigscreen {
             font-size: 20px;
+            margin-bottom: 6px;
         }
         @include laptop {
             font-size: 12px;
+            margin-bottom: 5px;
         }
         @include ipad {
             font-size: 8px;
+            margin-bottom: 3px;
         }
         @include mobile {
             display: block;

@@ -1,16 +1,97 @@
 $margin-left: 30px;
 $text-align: left;
 .privacyPage {
+  margin-top: 20px;
+  firstBox {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include bigscreen {
+      margin-top: 113px;
+      margin-bottom: 198px;
+    }
+    @include laptop {
+      margin-top: 160px;
+      margin-bottom: 141px;
+    }
+    @include ipad {
+      margin-top: 119px;
+      margin-bottom: 157px;
+    }
+    @include mobile {
+      margin-top: 55px;
+      margin-bottom: 58px;
+    }
+  }
+  hb1 {
+    @include bigscreen {
+      font-size: 70px;
+    }
+    @include laptop {
+      font-size: 40px;
+    }
+
+    @include ipad {
+      font-size: 30px;
+    }
+    @include mobile {
+      margin-top: 55px;
+      font-size: 30px;
+    }
+  }
+  .line {
+    @include bigscreen {
+      margin-top:50px;
+      margin-bottom:50px;
+    }
+    @include laptop {
+      margin-top:65px;
+      margin-bottom:65px;
+    }
+
+    @include ipad {
+      margin-top:40px;
+      margin-bottom:40px;
+    }
+    @include mobile {
+      margin-top:36px;
+      margin-bottom:36px;
+    }
+  }
+  hb2 {
+    @include bigscreen {
+      font-size: 32px;
+      width: 62%;
+    }
+    @include laptop {
+      font-size: 20px;
+      width: 65%;
+    }
+
+    @include ipad {
+      font-size: 18px;
+      width: 90%;
+    }
+    @include mobile {
+      font-size: 18px;
+      width: 93%;
+    }
+  }
   firstbox {
       text-align: center;
   }
-  .content {
+  .paraitem {
+    .content {
       text-align: $text-align;
       margin-left: $margin-left;
-  }
-  ContactUs {
-    .contactLink {
-      color:#f79365;
     }
+  }
+
+
+  
+  
+  .contactLink {
+    color:#f79365;
   }
 }
