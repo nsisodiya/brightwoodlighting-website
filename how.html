@@ -1,46 +1,61 @@
 <!DOCTYPE html>
-
+<html>
 <head>
-    <load src="src/small/meta.html"></load>
-    <script src="src/js/afterLoad.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Brightwood Lighting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" media="screen" href="./src/css/normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./temp/css/final.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 </head>
 
 <body>
-    <load src="src/components/header/header.html"></load>
+    <myheader>
+        <div class="myLogo">
+            <img class="logo" src="./src/images/logo/dark/none.svg">
+            <span class="subLogoText">Smart Lighting. Better Living.</span>
+        </div>
+        <div class="headerLinkParent">
+            <a class="headerLink" href="./how.html">HOW IT WORKS</a>
+        </div>
+    </myheader>
+
     <div class="howPage">
-        <firstBox>
+        <firstbox>
             <div>Live Healthy</div>
-            <div>Brightwood helps take care of your body by providing
-                dynamic sunlight adjustment throughout the day.</div>
-        </firstBox>
-        <imageBox>
-            <imageContainer>
-                <img class="image1"src="./src/images/Bedroom.jpg" alt="Image">
-            </imageContainer>
-            <imageText>
-                <imageHeading>Wake Up Naturally</imageHeading>
-                <imageSubHeading>Brightwood performs a gentle sunrise to help your body prepare for the day</imageSubHeading>
-            </imageText>
-        </imageBox>
-        <imageBox>
-            <imageContainer>
+            <div>Brightwood helps take care of your body by providing dynamic sunlight adjustment throughout the day.</div>
+        </firstbox>
+        <imagebox>
+            <imagecontainer>
+                <img class="image1" src="./src/images/Bedroom.jpg" alt="Image">
+            </imagecontainer>
+            <imagetext>
+                <imageheading>Wake Up Naturally</imageheading>
+                <imagesubheading>Brightwood performs a gentle sunrise to help your body prepare for the day</imagesubheading>
+            </imagetext>
+        </imagebox>
+        <imagebox>
+            <imagecontainer>
                 <img class="image2" src="./src/images/female-reading-book.jpg" alt="Image">
-            </imageContainer>
-            <imageText>
-                <imageHeading>Feel Comfortable</imageHeading>
-                <imageSubHeading>Your lights adjust throughout the day based on your preferences.</imageSubHeading>
-            </imageText>
-        </imageBox>
-        <imageBox>
-            <imageContainer>
+            </imagecontainer>
+            <imagetext>
+                <imageheading>Feel Comfortable</imageheading>
+                <imagesubheading>Your lights adjust throughout the day based on your preferences.</imagesubheading>
+            </imagetext>
+        </imagebox>
+        <imagebox>
+            <imagecontainer>
                 <img class="image3" src="./src/images/Villa2.jpg" alt="Image">
-                <overlay/>
-            </imageContainer>
-            <imageText>
-                <imageHeading class="villa2ImageTextColor">Fall Asleep Easily</imageHeading>
-                <imageSubHeading class="villa2ImageTextColor">In the evening, your lights remove blue rays which helps your body relax.</imageSubHeading>
-            </imageText>
-        </imageBox>
+                <overlay>
+                </overlay>
+            </imagecontainer>
+            <imagetext>
+                <imageheading class="villa2ImageTextColor">Fall Asleep Easily</imageheading>
+                <imagesubheading class="villa2ImageTextColor">In the evening, your lights remove blue rays which helps your
+                    body relax.</imagesubheading>
+            </imagetext>
+        </imagebox>
         <div class="lastBox">
             <div class="line1">Know First</div>
             <div class="line2">Brightwood is launching soon. Sign up to get notified.</div>
@@ -49,7 +64,18 @@
             </div>
         </div>
     </div>
-    <load src="src/components/footer/footer.html"></load>
+    <myfooter>
+        <div class="copyRight">
+            © Copyright 2018 Brightwood Inc.
+        </div>
+        <linkgroup>
+            <a href="./how.html">HOW IT WORKS</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./privacy.html">Privacy</a>
+        </linkgroup>
+        <div class="copyRight secondCopyRight">
+            © Copyright 2018 Brightwood Inc.
+        </div>
+    </myfooter>
 </body>
-
 </html>
