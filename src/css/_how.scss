@@ -1,4 +1,123 @@
 .howPage {
+  firstBox {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  firstBox div:first-child {
+    font-size: 64px;
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+  firstBox div:last-child {
+    font-size: 24px;
+    color: #00000070;
+    width: 60%;
+    @include mobile {
+      font-size:18px;color: #00000070;width:90%;
+    }
+  }
+
+  imageBox {
+    position: relative;
+    display: block;
+    height: 658px;
+    overflow: hidden;
+    @include ipad {
+      height: 520px;
+    }
+    @include mobile {
+      height: 410px;
+    }
+  }
+
+  imageContainer {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: flex-end;
+  }
+  imageText {
+    display: block;
+    margin-left: 9.6%;
+    position: absolute;
+    bottom: 256px;
+    width: 640px;
+    @include laptop {
+      margin-left: 3.64%;
+      bottom: 252px;
+      width: 545px;
+    }
+    @include ipad {
+      margin-left: 7%;
+      bottom: 293px;
+      width: 353px;
+    }
+    @include mobile {
+      margin-left: 5.88%;
+      bottom: 232px;
+      width: 279px;
+    }
+  }
+  .villa2ImageTextColor {
+    color: white;
+  }
+  imageHeading {
+    font-size: 45px;
+    display: block;
+    margin-bottom: 20px;
+    @include laptop {
+        font-size: 40px;
+    }
+    @include ipad {
+      font-size: 30px;
+    }
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+
+  imageSubHeading {
+    display: block;
+    color: #00000070;
+    @include bigscreen {
+      font-size: 24px;
+    }
+    @include laptop {
+      font-size: 20px;
+    }
+    @include ipad {
+      font-size: 18px;
+    }
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
+  imageContainer img {
+    @include bigscreen {
+      width: 1280px;
+    }
+    @include laptop {
+      width: 1012px;
+    }
+    @include ipad {
+      width: 1012px;
+    }
+    @include mobile {
+      width: 1000px;
+    }
+  }
+
   .lastBox {
     text-align: center;
     font-weight: lighter;
@@ -56,7 +175,7 @@
   margin-top: 19px;
   display: flex;
   input {
-    outline: none; 
+    outline: none;
     padding: 0px;
     margin: 0px;
     background: #e6e6e6;
@@ -78,7 +197,7 @@
     }
   }
   button {
-    outline: none; 
+    outline: none;
     padding: 0px;
     margin: 0px;
     color: #f79365;
