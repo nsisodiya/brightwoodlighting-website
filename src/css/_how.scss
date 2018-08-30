@@ -105,10 +105,10 @@
 
   imageContainer img {
     @include bigscreen {
-      width: 1280px;
+      width: 100%;
     }
     @include laptop {
-      width: 1012px;
+      width: 1280px;
     }
     @include ipad {
       width: 1012px;
